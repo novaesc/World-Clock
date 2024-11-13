@@ -2,27 +2,8 @@ body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/150/172/original/Screenshot_2024-11-12_172110.png?1731432091");
-  position: relative;
-
   background-size: cover;
   background-position: center;
-}
-
-.body::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(105, 102, 102, 0.458);
-  border-radius: 10px;
-  z-index: 1;
-}
-
-.container > * {
-  position: relative;
-  z-index: 2;
 }
 
 h1 {
@@ -43,7 +24,6 @@ h2 {
 
 .container {
   background-color: #3b434ccb;
-
   max-width: 600px;
   margin: 60px auto;
   padding: 30px;
@@ -99,6 +79,7 @@ footer {
   text-align: center;
   font-size: 15px;
   color: rgb(11, 11, 11);
+  margin-top: -3%;
 }
 
 a {

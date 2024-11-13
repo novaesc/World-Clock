@@ -13,6 +13,20 @@ function updateTime() {
     );
   }
 
+  //Sydney
+
+  let sydneyElement = document.querySelector("#sydney");
+  if (sydneyElement) {
+    let sydneyDateElement = sydneyElement.querySelector(".date");
+    let sydneyTimeElement = sydneyElement.querySelector(".time");
+    let sydneyTime = moment().tz("Australia/Sydney");
+
+    sydneyDateElement.innerHTML = moment().format("MMMM Do YYYY");
+    sydneyTimeElement.innerHTML = sydneyTime.format(
+      "h:mm:ss [<small>]A[</small]"
+    );
+  }
+
   //Barcellona
 
   let barcellonaElement = document.querySelector("#barcellona");
