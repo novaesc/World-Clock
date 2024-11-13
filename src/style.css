@@ -30,19 +30,19 @@ h1 {
   font-family: yellowtail;
   font-size: 55px;
   font-weight: lighter;
-  color: #946b73;
+  color: #b0808a;
   text-shadow: 1px 1px rgb#c3c1c26d;
 }
 
 h2 {
   margin: 0 0 10px;
   font-size: 30px;
-  color: rgb(68, 133, 143);
-  text-shadow: 1px 1px rgb#c3c1c26d;
+  color: rgb(104, 183, 196);
+  text-shadow: 1px 1px rgb#e4d9defc;
 }
 
 .container {
-  background-color: #3b434c;
+  background-color: #3b434ccb;
 
   max-width: 600px;
   margin: 60px auto;
@@ -55,7 +55,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   margin: 20px;
-  border-bottom: 1px dashed #946b73;
+  border-bottom: 1px dashed #b0808a;
   padding: 20px;
   padding-bottom: 20px;
 }
@@ -66,7 +66,7 @@ h2 {
 
 .date {
   opacity: 0.8;
-  color: rgba(131, 129, 129, 0.567);
+  color: rgba(185, 197, 206, 0.956);
   font-weight: bold;
   text-shadow: 1px 1px rgb#c3c1c26d;
 }
@@ -74,25 +74,25 @@ h2 {
 .time {
   font-size: 50px;
   font-weight: bold;
-  color: rgb(68, 133, 143);
-  text-shadow: 1px 1px rgb#c3c1c26d;
+  color: rgb(104, 183, 196);
+  text-shadow: 1px 1px rgb#e4d9defc;
 }
 
 .time small {
   font-size: 22px;
   vertical-align: middle;
   line-height: 45px;
-  color: rgb(124, 196, 207);
-  text-shadow: 1px 1px rgb#c3c1c26d;
+  color: rgb(173, 228, 236);
+  text-shadow: 1px 1px rgb#e4d9defc;
 }
 select {
   display: block;
-  color: black;
+  color: rgba(67, 99, 123, 0.956);
   width: 100%;
   padding: 10px;
   border-radius: 4px;
   font-size: 15px;
-  border-color: #946b73;
+  border-color: rgba(67, 99, 123, 0.956);
 }
 
 footer {
