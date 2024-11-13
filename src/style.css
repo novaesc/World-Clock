@@ -1,26 +1,53 @@
 body {
-  background-color: rgb(248, 233, 233);
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/150/172/original/Screenshot_2024-11-12_172110.png?1731432091");
+  position: relative;
+
+  background-size: cover;
+  background-position: center;
+}
+
+.body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(105, 102, 102, 0.458);
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.container > * {
+  position: relative;
+  z-index: 2;
 }
 
 h1 {
   text-align: center;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 35px;
+  font-family: yellowtail;
+  font-size: 55px;
+  font-weight: lighter;
+  color: #946b73;
+  text-shadow: 1px 1px rgb#c3c1c26d;
 }
 
 h2 {
   margin: 0 0 10px;
-  font-size: 28px;
+  font-size: 30px;
+  color: rgb(68, 133, 143);
+  text-shadow: 1px 1px rgb#c3c1c26d;
 }
 
 .container {
+  background-color: #3b434c;
+
   max-width: 600px;
   margin: 60px auto;
-  background: white;
   padding: 30px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
 }
 
@@ -28,7 +55,9 @@ h2 {
   display: flex;
   justify-content: space-between;
   margin: 20px;
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  border-bottom: 1px dashed #946b73;
+  padding: 20px;
+  padding-bottom: 20px;
 }
 
 .city:last-child {
@@ -36,29 +65,42 @@ h2 {
 }
 
 .date {
-  opacity: 0.7;
+  opacity: 0.8;
+  color: rgba(131, 129, 129, 0.567);
+  font-weight: bold;
+  text-shadow: 1px 1px rgb#c3c1c26d;
 }
 
 .time {
-  font-size: 45px;
+  font-size: 50px;
   font-weight: bold;
+  color: rgb(68, 133, 143);
+  text-shadow: 1px 1px rgb#c3c1c26d;
 }
 
 .time small {
   font-size: 22px;
   vertical-align: middle;
   line-height: 45px;
+  color: rgb(124, 196, 207);
+  text-shadow: 1px 1px rgb#c3c1c26d;
 }
 select {
   display: block;
+  color: black;
   width: 100%;
   padding: 10px;
   border-radius: 4px;
   font-size: 15px;
+  border-color: #946b73;
 }
 
 footer {
   text-align: center;
   font-size: 15px;
-  color: black;
+  color: rgb(11, 11, 11);
+}
+
+a {
+  color: rgb(11, 11, 11);
 }
