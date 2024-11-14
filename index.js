@@ -63,10 +63,24 @@ function updateCity(event) {
           )} <small>${cityTime.format("A")}</small></div>
         </div>
         `;
+
+  showMainLink();
+}
+
+function showMainLink() {
+  let mainLink = document.getElementById("main-link");
+
+  if (document.getElementById("city").value !== "") {
+    mainLink.style.display = "block"; // Show link when a city is selected
+  } else {
+    mainLink.style.display = "none";
+  }
 }
 
 updateTime();
 setInterval(updateTime, 1000);
+
+document.querySelector("#city").addEventListener("change", updateCity);
 
 let citiesSelectElement = document.querySelector("#city");
 citiesSelectElement.addEventListener("change", updateCity);

@@ -4,6 +4,8 @@ body {
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/150/172/original/Screenshot_2024-11-12_172110.png?1731432091");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed; /* Keeps the image fixed when scrolling */
+  background-repeat: no-repeat;
 }
 
 h1 {
@@ -74,7 +76,12 @@ select {
   font-size: 15px;
   border-color: rgba(67, 99, 123, 0.956);
 }
-
+#main-link {
+  display: none;
+  color: whitesmoke;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
 footer {
   text-align: center;
   font-size: 15px;
